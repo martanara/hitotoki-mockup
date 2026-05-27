@@ -74,9 +74,6 @@ export default function Dictionary() {
       
       {/* Header section */}
       <section className="space-y-4 text-center md:text-left">
-        <span className="text-xs tracking-[0.2em] text-charcoal font-medium uppercase block">
-          Tea Knowledge
-        </span>
         <h1 className="text-3xl md:text-4xl font-light tracking-wide text-charcoal">
           Słownik Hitotoki
         </h1>

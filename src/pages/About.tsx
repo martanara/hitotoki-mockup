@@ -4,7 +4,7 @@ export default function About() {
       {/* SECTION 1: Brand Story (Personal Roots) */}
       <section className="space-y-6">
         <span className="text-xs tracking-[0.2em] text-charcoal font-medium uppercase block">
-          Our Journey
+          Nasza historia
         </span>
         <h1 className="text-3xl md:text-4xl font-light tracking-wide text-charcoal">
           Więcej niż herbata. Rodzinna więź.
