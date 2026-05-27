@@ -26,6 +26,12 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             Strona Główna
           </button>
           <button 
+            onClick={() => onNavigate('store')}
+            className={`hover:text-matcha transition-colors ${currentPage === 'store' ? 'text-matcha font-medium' : 'text-charcoal/70'}`}
+          >
+            Sklep
+          </button>
+          <button 
             onClick={() => onNavigate('about')}
             className={`hover:text-matcha transition-colors ${currentPage === 'about' ? 'text-matcha font-medium' : 'text-charcoal/70'}`}
           >

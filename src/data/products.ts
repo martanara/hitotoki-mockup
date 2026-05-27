@@ -1,4 +1,3 @@
-// Product interface definition
 export interface Product {
   id: string;
   name: string;
@@ -13,10 +12,10 @@ export interface Product {
     time: string;
     amount: string;
   };
-  color: string; // Tailwind class for background/accents
+  color: string;
+  imageUrl: string; // 1. Add this new field to the interface
 }
 
-// Mock database of Hitotoki products
 export const PRODUCTS: Product[] = [
   {
     id: 'matcha-hitotoki',
@@ -25,14 +24,11 @@ export const PRODUCTS: Product[] = [
     category: 'Matcha',
     price: 89,
     shortDescription: 'Nasza najbardziej wszechstronna propozycja. Idealny balans między umami a słodyczą.',
-    description: 'Pochodząca z pierwszego zbioru matcha z regionu Chiran w Kagoshimie. Dzięki starannemu procesowi zacieniania i mielenia w tradycyjnych kamiennych żarnach, charakteryzuje się intensywnym kolorem i głębokim smakiem. Jest na tyle szlachetna, by pić ją tradycyjnie, i na tyle wyrazista, by stworzyć idealne matcha latte.',
+    description: 'Pochodząca z pierwszego zbioru matcha z regionu Chiran w Kagoshimie...',
     tastingNotes: ['Młody groszek', 'Słodka trawa', 'Kremowe umami'],
-    brewing: {
-      temp: '80°C',
-      time: '1 min (whisking)',
-      amount: '1.5g / 80ml'
-    },
-    color: 'bg-matcha'
+    brewing: { temp: '80°C', time: '1 min (whisking)', amount: '1.5g / 80ml' },
+    color: 'bg-matcha',
+    imageUrl: '/matcha.jpg'
   },
   {
     id: 'hojicha-chiran',
@@ -41,13 +37,10 @@ export const PRODUCTS: Product[] = [
     category: 'Hojicha',
     price: 45,
     shortDescription: 'Prażona herbata o niskiej zawartości kofeiny i karmelowym aromacie.',
-    description: 'Wyjątkowa hojicha z Kagoshimy, poddana procesowi mocnego prażenia. Proces ten niemal całkowicie eliminuje kofeinę, czyniąc ją idealnym wyborem na wieczorne hitotoki. W smaku dominują nuty orzechowe, karmelowe i lekko dymne.',
+    description: 'Wyjątkowa hojicha z Kagoshimy, poddana procesowi mocnego prażenia...',
     tastingNotes: ['Orzech laskowy', 'Karmel', 'Ciemna czekolada'],
-    brewing: {
-      temp: '95°C',
-      time: '30-60 sek',
-      amount: '4g / 200ml'
-    },
-    color: 'bg-hojicha'
+    brewing: { temp: '95°C', time: '30-60 sek', amount: '4g / 200ml' },
+    color: 'bg-hojicha',
+    imageUrl: '/hojicha.jpg'
   }
 ];

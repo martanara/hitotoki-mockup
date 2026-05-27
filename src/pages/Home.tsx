@@ -9,24 +9,36 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="space-y-24 py-10 md:py-16">
       {/* 1. SEKCJA HERO */}
-      <section className="text-center max-w-3xl mx-auto space-y-6 py-12">
-        <span className="text-xs tracking-[0.2em] text-matcha font-medium uppercase block">
-          Kagoshima, Japan
-        </span>
-        <h1 className="text-4xl md:text-6xl font-light tracking-wide text-matcha leading-tight">
-          Twoja japońska chwila wytchnienia.
-        </h1>
-        <p className="text-lg md:text-xl text-charcoal/80 font-serif italic max-w-2xl mx-auto leading-relaxed">
-          Autentyczna herbata z serca Kagoshimy. Od naszych przyjaciół, prosto
-          do Twojej filiżanki.
-        </p>
-        <div className="pt-4">
-          <button
-            onClick={() => onNavigate("about")}
-            className="border border-matcha text-matcha px-8 py-3 text-sm tracking-widest uppercase hover:bg-matcha hover:text-cream transition-all duration-300 rounded-sm"
-          >
-            Poznaj naszą historię
-          </button>
+      <section className="grid md:grid-cols-2 gap-12 md:gap-16 items-center py-12 md:py-20">
+        {/* Left Column: Brand Catch Copy & Introduction */}
+        <div className="space-y-6 text-center md:text-left">
+          <span className="text-xs tracking-[0.2em] text-matcha font-medium uppercase block">
+            Kagoshima, Japan
+          </span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-matcha leading-tight">
+            Twoja japońska chwila wytchnienia.
+          </h1>
+          <p className="text-lg md:text-xl text-charcoal/80 font-serif italic max-w-2xl mx-auto md:mx-0 leading-relaxed pt-2">
+            Autentyczna herbata z serca Kagoshimy. Od naszych przyjaciół, prosto
+            do Twojej filiżanki.
+          </p>
+          <div className="pt-6">
+            <button
+              onClick={() => onNavigate("about")}
+              className="border border-matcha text-matcha px-8 py-3 text-sm tracking-widest uppercase hover:bg-matcha hover:text-cream transition-all duration-300 rounded-sm cursor-pointer"
+            >
+              Poznaj naszą historię
+            </button>
+          </div>
+        </div>
+
+        {/* Right Column: Hero Visual - Using the image from public/hero.jpg */}
+        <div className="aspect-4/5 rounded-sm overflow-hidden bg-matcha/5 animate-fade-in delay-100">
+          <img
+            src="/hero.jpg" 
+            alt="Mglista japońska plantacja herbaty w Kagoshimie"
+            className="w-full h-full object-cover"
+          />
         </div>
       </section>
 
@@ -66,14 +78,17 @@ export default function Home({ onNavigate }: HomeProps) {
               className="group cursor-pointer"
               onClick={() => onNavigate(`product-${product.id}`)}
             >
-              {/* Product Image Placeholder */}
-              <div
-                className={`aspect-4/3 ${product.color}/10 rounded-sm overflow-hidden mb-6 relative flex items-center justify-center`}
-              >
-                <span className="text-matcha/20 text-8xl font-serif">
+              {/* Product Image */}
+              <div className="aspect-4/3 rounded-sm overflow-hidden mb-6 relative bg-charcoal/5">
+                <img
+                  src={product.imageUrl}
+                  alt={product.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+                {/* Absolute overlay for the Japanese character vibe */}
+                <div className="absolute top-4 left-4 bg-cream/90 backdrop-blur-sm px-2 py-1 text-xs font-serif rounded-xs">
                   {product.japaneseName}
-                </span>
-                <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/5 transition-colors duration-500" />
+                </div>
               </div>
 
               <div className="space-y-2">
