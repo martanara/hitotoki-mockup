@@ -32,7 +32,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'hojicha-chiran',
-    name: 'Hojicha Chiran',
+    name: 'Hojicha Hitotoki',
     japaneseName: '焙じ茶',
     category: 'Hojicha',
     price: 45,
