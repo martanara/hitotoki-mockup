@@ -35,7 +35,7 @@ export default function Home({ onNavigate }: HomeProps) {
         {/* Right Column: Hero Visual - Using the image from public/hero.jpg */}
         <div className="aspect-4/5 rounded-sm overflow-hidden bg-matcha/5 animate-fade-in delay-100">
           <img
-            src="/hero.jpg" 
+            src={`${import.meta.env.BASE_URL}hero.jpg`}
             alt="Mglista japońska plantacja herbaty w Kagoshimie"
             className="w-full h-full object-cover"
           />
@@ -81,7 +81,7 @@ export default function Home({ onNavigate }: HomeProps) {
               {/* Product Image */}
               <div className="aspect-4/3 rounded-sm overflow-hidden mb-6 relative bg-charcoal/5">
                 <img
-                  src={product.imageUrl}
+                  src={`${import.meta.env.BASE_URL}${product.imageUrl.slice(1)}`}
                   alt={product.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />

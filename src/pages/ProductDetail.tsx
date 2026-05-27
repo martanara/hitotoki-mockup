@@ -11,7 +11,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         {/* Left: Product visual */}
         <div className="aspect-4/3 rounded-sm overflow-hidden mb-6 relative bg-charcoal/5">
           <img
-            src={product.imageUrl}
+            src={`${import.meta.env.BASE_URL}${product.imageUrl.slice(1)}`}
             alt={product.name}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
           />
