@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { PRODUCTS } from "../data/products";
 import type { AppView } from "../types";
 
@@ -9,7 +10,13 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="space-y-24 py-10 md:py-16">
       {/* 1. SEKCJA HERO */}
-      <section className="grid md:grid-cols-2 gap-12 md:gap-16 items-center py-12 md:py-20">
+      <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="grid md:grid-cols-2 gap-12 md:gap-16 items-center py-12 md:py-20"
+      >
         {/* Left Column: Brand Catch Copy & Introduction */}
         <div className="space-y-6 text-center md:text-left">
           <span className="text-xs tracking-[0.2em] text-charcoal font-medium uppercase block">
@@ -41,10 +48,16 @@ export default function Home({ onNavigate }: HomeProps) {
           />
           <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-colors duration-700 pointer-events-none" />
         </div>
-      </section>
+      </motion.section>
 
       {/* 2. SEKCJA INTRO (O nas w dwóch zdaniach) */}
-      <section className="bg-hojicha/80 rounded-sm py-16 -mx-6 px-6">
+      <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="bg-hojicha/80 rounded-sm py-16 -mx-6 px-6"
+      >
         <div className="max-w-3xl mx-auto text-center space-y-6">
           <h2 className="text-2xl font-light tracking-wide text-white">
             Osobista więź
@@ -57,9 +70,15 @@ export default function Home({ onNavigate }: HomeProps) {
             które sami pijemy z naszą rodziną i przyjaciółmi w Japonii.
           </p>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="space-y-12">
+      <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="space-y-12"
+      >
         <div className="flex items-baseline justify-between border-b border-charcoal/10 pb-4">
           <h2 className="text-2xl font-light tracking-wide text-charcoal">
             Nasze herbaty
@@ -108,10 +127,16 @@ export default function Home({ onNavigate }: HomeProps) {
             </div>
           ))}
         </div>
-      </section>
+      </motion.section>
 
       {/* 3. SEKCJA VALUE PROPOSITION (Trzy kolumny) */}
-      <section className="space-y-12">
+      <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="space-y-12"
+      >
         <div className="text-center">
           <h2 className="text-xs tracking-[0.2em] text-charcoal/50 font-medium uppercase">
             Dlaczego Hitotoki?
@@ -158,7 +183,7 @@ export default function Home({ onNavigate }: HomeProps) {
             </p>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }
