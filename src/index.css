@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-matcha: #4C6A48;
+  --color-hojicha: #8C6239;
+  --color-cream: #F9F6F0;
+  --color-charcoal: #2C2C2C;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+}
