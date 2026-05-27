@@ -61,7 +61,7 @@ export default function Home({ onNavigate }: HomeProps) {
           }}
           className="group flex flex-col items-center gap-2 text-[10px] tracking-[0.3em] uppercase text-charcoal/50 hover:text-matcha transition-colors duration-300 cursor-pointer focus:outline-hidden"
         >
-          <span className="font-light">Eksploruj Hitotoki</span>
+          <span className="font-light">Zobacz nasze herbaty</span>
 
           {/* Minimalist pulsing arrow icon */}
           <svg
@@ -94,7 +94,7 @@ export default function Home({ onNavigate }: HomeProps) {
             Osobista więź
           </h2>
           <p className="text-base md:text-lg text-white/90 leading-relaxed font-light">
-            <strong className="font-medium text-white">Hitotoki</strong>{" "}
+            <strong className="font-medium text-white">Hitotoki</strong>
             powstało z miłości, która narodziła się w Japonii i przyjaźni, która
             przetrwała lata. Nie jesteśmy tylko sklepem – jesteśmy mostem między
             japońskim rzemiosłem a Twoim domem. Sprowadzamy dla Ciebie herbaty,
@@ -196,7 +196,7 @@ export default function Home({ onNavigate }: HomeProps) {
               Jakość, którą czuć
             </h3>
             <p className="text-sm text-charcoal/70 leading-relaxed">
-              Nasza charcoal to wszechstronność. Zachwyca głębią jako klasyczna
+              Nasza matcha to wszechstronność. Zachwyca głębią jako klasyczna
               czarka herbaty i otula aksamitnym smakiem w formie idealnego
               latte.
             </p>
@@ -209,8 +209,8 @@ export default function Home({ onNavigate }: HomeProps) {
               Chwila dla Ciebie
             </h3>
             <p className="text-sm text-charcoal/70 leading-relaxed">
-              Wierzymy, że każdy zasługuje na{" "}
-              <span className="font-serif italic text-charcoal">hitotoki</span>{" "}
+              Wierzymy, że każdy zasługuje na
+              <span className="font-serif italic text-charcoal">hitotoki</span>
               – moment świadomego zatrzymania się w biegu dnia.
             </p>
           </div>
