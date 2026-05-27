@@ -11,3 +11,7 @@ body {
   background-color: var(--color-cream);
   color: var(--color-charcoal);
 }
+
+.vertical-text {
+  writing-mode: vertical-rl;
+}
