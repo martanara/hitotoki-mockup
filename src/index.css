@@ -1,13 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-hojicha: #8C6239;
   --color-cream: #F9F9F9;
   --color-beige: #F1F0EF;
-  --color-leaves: #616153;
+  --color-hojicha: #616153;
   --color-charcoal: #616153;
   --color-white: #EDEDE8;
-  --color-blue: #A4C8CE;
 }
 
 body {

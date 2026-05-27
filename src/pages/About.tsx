@@ -39,12 +39,16 @@ export default function About() {
       </section>
       {/* SECTION 2: Heritage & Region (Minoru-en Chaho) */}
       <section className="-mx-6 px-6">
-        <div className="aspect-21/9 rounded-sm overflow-hidden bg-charcoal/5">
+        <div className="aspect-21/9 rounded-sm overflow-hidden bg-charcoal/5 relative group">
+          {/* 1. The Original Image */}
           <img
             src={`${import.meta.env.BASE_URL}about-us.jpg`}
-            alt="Japońskie czarki z herbatą w rzędzie"
-            className="w-full h-full object-cover"
+            alt="Dłonie przygotowujące japońską herbatę"
+            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-[1.03]"
           />
+
+          {/* 2. REFRESHED BRIGHT OVERLAY */}
+          <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-colors duration-700 pointer-events-none" />
         </div>
       </section>
       {/* SECTION 3: Heritage & Region (Minoru-en Chaho) */}

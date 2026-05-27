@@ -31,14 +31,14 @@ export default function Store({ onNavigate }: StoreProps) {
             onClick={() => onNavigate(`product-${product.id}`)}
           >
             {/* Image container box */}
-            <div className="aspect-4/3 rounded-sm overflow-hidden mb-6 relative bg-charcoal/5">
+            <div className="aspect-4/3 rounded-sm overflow-hidden mb-6 relative group bg-charcoal/5">
               <img
                 src={`${import.meta.env.BASE_URL}${product.imageUrl.slice(1)}`}
                 alt={product.name}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
               />
-              {/* Absolute overlay for the Japanese character vibe */}
-              <div className="absolute top-4 left-4 bg-cream/90 backdrop-blur-sm px-2 py-1 text-xs font-serif rounded-xs">
+              <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-colors duration-700 pointer-events-none" />
+              <div className="absolute top-4 left-4 bg-cream/90 backdrop-blur-sm px-2 py-1 text-xs font-serif rounded-xs z-10 text-lino-black select-none pointer-events-none">
                 {product.japaneseName}
               </div>
             </div>

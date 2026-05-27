@@ -33,23 +33,24 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
 
         {/* Right Column: Hero Visual - Using the image from public/hero.jpg */}
-        <div className="aspect-4/5 rounded-sm overflow-hidden bg-charcoal/5 animate-fade-in delay-100">
+        <div className="aspect-4/5 rounded-sm overflow-hidden bg-matcha/5 animate-fade-in delay-100 relative group">
           <img
             src={`${import.meta.env.BASE_URL}hero.jpg`}
             alt="Mglista japońska plantacja herbaty w Kagoshimie"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
           />
+          <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-colors duration-700 pointer-events-none" />
         </div>
       </section>
 
       {/* 2. SEKCJA INTRO (O nas w dwóch zdaniach) */}
-      <section className="bg-blue/80 rounded-sm py-16 -mx-6 px-6">
+      <section className="bg-hojicha/80 rounded-sm py-16 -mx-6 px-6">
         <div className="max-w-3xl mx-auto text-center space-y-6">
-          <h2 className="text-2xl font-light tracking-wide text-charcoal">
+          <h2 className="text-2xl font-light tracking-wide text-white">
             Osobista więź
           </h2>
-          <p className="text-base md:text-lg text-charcoal/90 leading-relaxed font-light">
-            <strong className="font-medium text-charcoal">Hitotoki</strong>{" "}
+          <p className="text-base md:text-lg text-white/90 leading-relaxed font-light">
+            <strong className="font-medium text-white">Hitotoki</strong>{" "}
             powstało z miłości, która narodziła się w Japonii i przyjaźni, która
             przetrwała lata. Nie jesteśmy tylko sklepem – jesteśmy mostem między
             japońskim rzemiosłem a Twoim domem. Sprowadzamy dla Ciebie herbaty,
@@ -79,14 +80,14 @@ export default function Home({ onNavigate }: HomeProps) {
               onClick={() => onNavigate(`product-${product.id}`)}
             >
               {/* Product Image */}
-              <div className="aspect-4/3 rounded-sm overflow-hidden mb-6 relative bg-charcoal/5">
+              <div className="aspect-4/3 rounded-sm overflow-hidden mb-6 relative group bg-charcoal/5">
                 <img
                   src={`${import.meta.env.BASE_URL}${product.imageUrl.slice(1)}`}
                   alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
                 />
-                {/* Absolute overlay for the Japanese character vibe */}
-                <div className="absolute top-4 left-4 bg-cream/90 backdrop-blur-sm px-2 py-1 text-xs font-serif rounded-xs">
+                <div className="absolute inset-0 bg-white/10 group-hover:bg-white/20 transition-colors duration-700 pointer-events-none" />
+                <div className="absolute top-4 left-4 bg-cream/90 backdrop-blur-sm px-2 py-1 text-xs font-serif rounded-xs z-10 text-lino-black select-none pointer-events-none">
                   {product.japaneseName}
                 </div>
               </div>
@@ -152,8 +153,8 @@ export default function Home({ onNavigate }: HomeProps) {
             </h3>
             <p className="text-sm text-charcoal/70 leading-relaxed">
               Wierzymy, że każdy zasługuje na{" "}
-              <span className="font-serif italic text-charcoal">hitotoki</span> –
-              moment świadomego zatrzymania się w biegu dnia.
+              <span className="font-serif italic text-charcoal">hitotoki</span>{" "}
+              – moment świadomego zatrzymania się w biegu dnia.
             </p>
           </div>
         </div>

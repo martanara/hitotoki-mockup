@@ -9,15 +9,19 @@ export default function ProductDetail({ product }: ProductDetailProps) {
     <div className="py-10 md:py-16 animate-fade-in">
       <div className="grid md:grid-cols-2 gap-16 items-start">
         {/* Left: Product visual */}
-        <div className="aspect-4/3 rounded-sm overflow-hidden mb-6 relative bg-charcoal/5">
+        <div className="aspect-square rounded-sm overflow-hidden bg-charcoal/5 flex items-center justify-center relative group">
+          {/* 1. The Main Product Image */}
           <img
             src={`${import.meta.env.BASE_URL}${product.imageUrl.slice(1)}`}
             alt={product.name}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+            className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
           />
-          {/* Absolute overlay for the Japanese character vibe */}
-          <div className="absolute top-4 left-4 bg-cream/90 backdrop-blur-sm px-2 py-1 text-xs font-serif rounded-xs">
+          <div className="absolute inset-0 bg-white/10 group-hover:bg-white/15 transition-colors duration-700 pointer-events-none" />
+          <span className="absolute left-6 top-1/2 -translate-y-1/2 w-[1em] text-center font-serif text-matcha/5 text-6xl md:text-7xl lg:text-8xl select-none pointer-events-none z-10 break-all leading-none tracking-[0.2em]">
             {product.japaneseName}
+          </span>
+          <div className="absolute bottom-8 right-8 text-xs tracking-[0.3em] text-matcha uppercase vertical-text select-none pointer-events-none z-10">
+            Kagoshima Origin
           </div>
         </div>
 
