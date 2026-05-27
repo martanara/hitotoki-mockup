@@ -41,7 +41,7 @@ export default function About() {
       <section className="-mx-6 px-6">
         <div className="aspect-21/9 rounded-sm overflow-hidden bg-charcoal/5">
           <img
-            src="/about-us.jpg" // 1. Make sure this file exists in your public folder!
+            src={`${import.meta.env.BASE_URL}about-us.jpg`}
             alt="Japońskie czarki z herbatą w rzędzie"
             className="w-full h-full object-cover"
           />
