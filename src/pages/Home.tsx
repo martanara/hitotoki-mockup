@@ -12,10 +12,10 @@ export default function Home({ onNavigate }: HomeProps) {
       <section className="grid md:grid-cols-2 gap-12 md:gap-16 items-center py-12 md:py-20">
         {/* Left Column: Brand Catch Copy & Introduction */}
         <div className="space-y-6 text-center md:text-left">
-          <span className="text-xs tracking-[0.2em] text-matcha font-medium uppercase block">
+          <span className="text-xs tracking-[0.2em] text-charcoal font-medium uppercase block">
             Kagoshima, Japan
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-matcha leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-charcoal leading-tight">
             Twoja japońska chwila wytchnienia.
           </h1>
           <p className="text-lg md:text-xl text-charcoal/80 font-serif italic max-w-2xl mx-auto md:mx-0 leading-relaxed pt-2">
@@ -25,7 +25,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="pt-6">
             <button
               onClick={() => onNavigate("about")}
-              className="border border-matcha text-matcha px-8 py-3 text-sm tracking-widest uppercase hover:bg-matcha hover:text-cream transition-all duration-300 rounded-sm cursor-pointer"
+              className="border border-charcoal text-charcoal px-8 py-3 text-sm tracking-widest uppercase hover:bg-charcoal hover:text-cream transition-all duration-300 rounded-sm cursor-pointer"
             >
               Poznaj naszą historię
             </button>
@@ -33,7 +33,7 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
 
         {/* Right Column: Hero Visual - Using the image from public/hero.jpg */}
-        <div className="aspect-4/5 rounded-sm overflow-hidden bg-matcha/5 animate-fade-in delay-100">
+        <div className="aspect-4/5 rounded-sm overflow-hidden bg-charcoal/5 animate-fade-in delay-100">
           <img
             src={`${import.meta.env.BASE_URL}hero.jpg`}
             alt="Mglista japońska plantacja herbaty w Kagoshimie"
@@ -43,13 +43,13 @@ export default function Home({ onNavigate }: HomeProps) {
       </section>
 
       {/* 2. SEKCJA INTRO (O nas w dwóch zdaniach) */}
-      <section className="bg-matcha/5 border-y border-matcha/10 py-16 -mx-6 px-6">
+      <section className="bg-blue/80 rounded-sm py-16 -mx-6 px-6">
         <div className="max-w-3xl mx-auto text-center space-y-6">
-          <h2 className="text-2xl font-light tracking-wide text-matcha">
+          <h2 className="text-2xl font-light tracking-wide text-charcoal">
             Osobista więź
           </h2>
           <p className="text-base md:text-lg text-charcoal/90 leading-relaxed font-light">
-            <strong className="font-medium text-matcha">Hitotoki</strong>{" "}
+            <strong className="font-medium text-charcoal">Hitotoki</strong>{" "}
             powstało z miłości, która narodziła się w Japonii i przyjaźni, która
             przetrwała lata. Nie jesteśmy tylko sklepem – jesteśmy mostem między
             japońskim rzemiosłem a Twoim domem. Sprowadzamy dla Ciebie herbaty,
@@ -60,12 +60,12 @@ export default function Home({ onNavigate }: HomeProps) {
 
       <section className="space-y-12">
         <div className="flex items-baseline justify-between border-b border-charcoal/10 pb-4">
-          <h2 className="text-2xl font-light tracking-wide text-matcha">
+          <h2 className="text-2xl font-light tracking-wide text-charcoal">
             Nasze herbaty
           </h2>
           <button
             onClick={() => onNavigate("store")}
-            className="text-xs tracking-widest uppercase hover:text-matcha transition-colors cursor-pointer"
+            className="text-xs tracking-widest uppercase hover:text-charcoal transition-colors cursor-pointer"
           >
             Zobacz wszystkie
           </button>
@@ -93,7 +93,7 @@ export default function Home({ onNavigate }: HomeProps) {
 
               <div className="space-y-2">
                 <div className="flex justify-between items-baseline">
-                  <h3 className="text-xl font-light tracking-wide group-hover:text-matcha transition-colors">
+                  <h3 className="text-xl font-light tracking-wide group-hover:text-charcoal transition-colors">
                     {product.name}
                   </h3>
                   <span className="text-sm font-medium">
@@ -119,8 +119,8 @@ export default function Home({ onNavigate }: HomeProps) {
 
         <div className="grid md:grid-cols-3 gap-12 md:gap-8">
           {/* Cecha 1 */}
-          <div className="space-y-3 p-4 rounded-sm hover:bg-matcha/5 transition-colors">
-            <div className="text-matcha text-xl font-light">01</div>
+          <div className="space-y-3 p-4 rounded-sm hover:bg-charcoal/5 transition-colors">
+            <div className="text-charcoal text-xl font-light">01</div>
             <h3 className="text-lg font-medium tracking-wide">
               Z Kagoshimy, bez pośredników
             </h3>
@@ -132,27 +132,27 @@ export default function Home({ onNavigate }: HomeProps) {
           </div>
 
           {/* Cecha 2 */}
-          <div className="space-y-3 p-4 rounded-sm hover:bg-matcha/5 transition-colors">
-            <div className="text-matcha text-xl font-light">02</div>
+          <div className="space-y-3 p-4 rounded-sm hover:bg-charcoal/5 transition-colors">
+            <div className="text-charcoal text-xl font-light">02</div>
             <h3 className="text-lg font-medium tracking-wide">
               Jakość, którą czuć
             </h3>
             <p className="text-sm text-charcoal/70 leading-relaxed">
-              Nasza matcha to wszechstronność. Zachwyca głębią jako klasyczna
+              Nasza charcoal to wszechstronność. Zachwyca głębią jako klasyczna
               czarka herbaty i otula aksamitnym smakiem w formie idealnego
               latte.
             </p>
           </div>
 
           {/* Cecha 3 */}
-          <div className="space-y-3 p-4 rounded-sm hover:bg-matcha/5 transition-colors">
-            <div className="text-matcha text-xl font-light">03</div>
+          <div className="space-y-3 p-4 rounded-sm hover:bg-charcoal/5 transition-colors">
+            <div className="text-charcoal text-xl font-light">03</div>
             <h3 className="text-lg font-medium tracking-wide">
               Chwila dla Ciebie
             </h3>
             <p className="text-sm text-charcoal/70 leading-relaxed">
               Wierzymy, że każdy zasługuje na{" "}
-              <span className="font-serif italic text-matcha">hitotoki</span> –
+              <span className="font-serif italic text-charcoal">hitotoki</span> –
               moment świadomego zatrzymania się w biegu dnia.
             </p>
           </div>

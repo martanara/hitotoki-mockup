@@ -10,10 +10,10 @@ export default function Store({ onNavigate }: StoreProps) {
     <div className="space-y-12 py-10 md:py-16">
       {/* Header section */}
       <section className="space-y-4 text-center md:text-left">
-        <span className="text-xs tracking-[0.2em] text-matcha font-medium uppercase block">
+        <span className="text-xs tracking-[0.2em] text-charcoal font-medium uppercase block">
           Kolekcja Hitotoki
         </span>
-        <h1 className="text-3xl md:text-4xl font-light tracking-wide text-matcha">
+        <h1 className="text-3xl md:text-4xl font-light tracking-wide text-charcoal">
           Nasze japońskie herbaty
         </h1>
         <p className="text-charcoal/70 font-light max-w-xl">
@@ -46,7 +46,7 @@ export default function Store({ onNavigate }: StoreProps) {
             {/* Title & metadata footer */}
             <div className="space-y-2">
               <div className="flex justify-between items-baseline">
-                <h3 className="text-xl font-light tracking-wide group-hover:text-matcha transition-colors">
+                <h3 className="text-xl font-light tracking-wide group-hover:text-charcoal transition-colors">
                   {product.name}
                 </h3>
                 <span className="text-sm font-medium">{product.price} zł</span>

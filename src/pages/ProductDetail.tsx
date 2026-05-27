@@ -24,7 +24,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         {/* Right: Product Content */}
         <div className="space-y-10">
           <header className="space-y-4">
-            <span className="text-xs tracking-[0.2em] text-matcha font-medium uppercase">
+            <span className="text-xs tracking-[0.2em] text-charcoal font-medium uppercase">
               {product.category}
             </span>
             <h1 className="text-4xl font-light tracking-wide">

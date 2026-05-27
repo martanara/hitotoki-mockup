@@ -3,10 +3,10 @@ export default function About() {
     <div className="space-y-20 py-10 md:py-16 max-w-3xl mx-auto">
       {/* SECTION 1: Brand Story (Personal Roots) */}
       <section className="space-y-6">
-        <span className="text-xs tracking-[0.2em] text-matcha font-medium uppercase block">
+        <span className="text-xs tracking-[0.2em] text-charcoal font-medium uppercase block">
           Our Journey
         </span>
-        <h1 className="text-3xl md:text-4xl font-light tracking-wide text-matcha">
+        <h1 className="text-3xl md:text-4xl font-light tracking-wide text-charcoal">
           Więcej niż herbata. Rodzinna więź.
         </h1>
         <div className="text-charcoal/90 space-y-4 font-light leading-relaxed">
@@ -27,7 +27,7 @@ export default function About() {
         </div>
 
         {/* Highlighted USP Box: Packed in Japan */}
-        <div className="mt-8 p-6 bg-matcha/5 border-l-2 border-matcha rounded-sm">
+        <div className="mt-8 p-6 bg-charcoal/5 border-l-2 border-charcoal rounded-sm">
           <p className="text-sm text-charcoal/90 leading-relaxed font-medium">
             Co dla nas kluczowe – każda nasza herbata jest pakowana bezpośrednio
             w Japonii, w zaufanym rodzinnym chaho. Dzięki temu mamy pewność, że
@@ -52,7 +52,7 @@ export default function About() {
         <span className="text-xs tracking-[0.2em] text-charcoal/50 font-medium uppercase block">
           Our Estate & Heritage
         </span>
-        <h2 className="text-2xl font-light tracking-wide text-matcha">
+        <h2 className="text-2xl font-light tracking-wide text-charcoal">
           Tradycja Minoru-en
         </h2>
 
@@ -82,7 +82,7 @@ export default function About() {
         </div>
 
         {/* Closing statement */}
-        <p className="text-base font-serif italic text-matcha text-center pt-8">
+        <p className="text-base font-serif italic text-charcoal text-center pt-8">
           „W Hitotoki nie znajdziesz anonimowych produktów. Znajdziesz herbatę
           od ludzi, których znamy, cenimy i z którymi wspólnie pijemy napar przy
           jednym stole.”

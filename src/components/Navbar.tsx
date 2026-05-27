@@ -12,7 +12,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
         {/* Logo */}
         <button 
           onClick={() => onNavigate('home')} 
-          className="text-2xl font-light tracking-widest text-matcha hover:opacity-80 transition-opacity"
+          className="text-2xl font-light tracking-widest text-charcoal hover:opacity-80 transition-opacity"
         >
           hitotoki
         </button>
@@ -21,25 +21,25 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
         <nav className="flex gap-8 text-sm tracking-wide">
           <button 
             onClick={() => onNavigate('home')}
-            className={`hover:text-matcha transition-colors ${currentPage === 'home' ? 'text-matcha font-medium' : 'text-charcoal/70'}`}
+            className={`hover:text-charcoal transition-colors ${currentPage === 'home' ? 'text-charcoal font-medium' : 'text-charcoal/70'}`}
           >
             Strona Główna
           </button>
           <button 
             onClick={() => onNavigate('store')}
-            className={`hover:text-matcha transition-colors ${currentPage === 'store' ? 'text-matcha font-medium' : 'text-charcoal/70'}`}
+            className={`hover:text-charcoal transition-colors ${currentPage === 'store' ? 'text-charcoal font-medium' : 'text-charcoal/70'}`}
           >
             Sklep
           </button>
           <button 
             onClick={() => onNavigate('about')}
-            className={`hover:text-matcha transition-colors ${currentPage === 'about' ? 'text-matcha font-medium' : 'text-charcoal/70'}`}
+            className={`hover:text-charcoal transition-colors ${currentPage === 'about' ? 'text-charcoal font-medium' : 'text-charcoal/70'}`}
           >
             O nas & Herbata
           </button>
           <button 
             onClick={() => onNavigate('dictionary')}
-            className={`hover:text-matcha transition-colors ${currentPage === 'dictionary' ? 'text-matcha font-medium' : 'text-charcoal/70'}`}
+            className={`hover:text-charcoal transition-colors ${currentPage === 'dictionary' ? 'text-charcoal font-medium' : 'text-charcoal/70'}`}
           >
             Słownik
           </button>

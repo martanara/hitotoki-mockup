@@ -74,10 +74,10 @@ export default function Dictionary() {
       
       {/* Header section */}
       <section className="space-y-4 text-center md:text-left">
-        <span className="text-xs tracking-[0.2em] text-matcha font-medium uppercase block">
+        <span className="text-xs tracking-[0.2em] text-charcoal font-medium uppercase block">
           Tea Knowledge
         </span>
-        <h1 className="text-3xl md:text-4xl font-light tracking-wide text-matcha">
+        <h1 className="text-3xl md:text-4xl font-light tracking-wide text-charcoal">
           Słownik Hitotoki
         </h1>
         <p className="text-charcoal/70 font-light max-w-xl">
@@ -92,12 +92,12 @@ export default function Dictionary() {
           placeholder="Szukaj terminu (np. Matcha, Chawan)..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full bg-transparent border-b border-charcoal/20 focus:border-matcha outline-none py-3 text-sm tracking-wide transition-colors font-light placeholder:text-charcoal/40"
+          className="w-full bg-transparent border-b border-charcoal/20 focus:border-charcoal outline-none py-3 text-sm tracking-wide transition-colors font-light placeholder:text-charcoal/40"
         />
         {searchQuery && (
           <button 
             onClick={() => setSearchQuery('')}
-            className="absolute right-0 top-3 text-xs text-charcoal/40 hover:text-matcha transition-colors"
+            className="absolute right-0 top-3 text-xs text-charcoal/40 hover:text-charcoal transition-colors"
           >
             Clear
           </button>
@@ -115,14 +115,14 @@ export default function Dictionary() {
               {/* Left Column: Language and naming tokens */}
               <div className="md:w-1/3 space-y-1">
                 <div className="flex items-baseline gap-3">
-                  <h3 className="text-xl font-medium tracking-wide text-charcoal group-hover:text-matcha transition-colors">
+                  <h3 className="text-xl font-medium tracking-wide text-charcoal group-hover:text-charcoal transition-colors">
                     {item.romaji}
                   </h3>
                   <span className="text-sm font-light text-charcoal/40 font-serif">
                     {item.kanji}
                   </span>
                 </div>
-                <p className="text-xs text-matcha tracking-wide font-medium">
+                <p className="text-xs text-charcoal tracking-wide font-medium">
                   {item.translation}
                 </p>
               </div>
