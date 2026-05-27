@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -11,7 +11,15 @@ import type { AppView } from "./types";
 
 function App() {
   // Local reactive state for views routing
-  const [currentPage, setCurrentPage] = useState<AppView>('home');
+  const [currentPage, setCurrentPage] = useState<AppView>("home");
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant", 
+    });
+  }, [currentPage]);
 
   return (
     <div className="min-h-screen flex flex-col bg-cream text-charcoal antialiased">
