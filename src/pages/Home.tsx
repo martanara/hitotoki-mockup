@@ -15,7 +15,7 @@ export default function Home({ onNavigate }: HomeProps) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="grid md:grid-cols-2 gap-12 md:gap-16 items-center py-12 md:py-20"
+        className="grid md:grid-cols-2 gap-12 md:gap-16 items-center pt-12 pb-0 md:pt-20 md:pb-0"
       >
         {/* Left Column: Brand Catch Copy & Introduction */}
         <div className="space-y-6 text-center md:text-left">
@@ -50,6 +50,37 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </motion.section>
 
+      {/* Scroll Down Indicator Button */}
+      <div className="flex justify-center">
+        <button
+          onClick={() => {
+            const element = document.getElementById("products-section");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          }}
+          className="group flex flex-col items-center gap-2 text-[10px] tracking-[0.3em] uppercase text-charcoal/50 hover:text-matcha transition-colors duration-300 cursor-pointer focus:outline-hidden"
+        >
+          <span className="font-light">Eksploruj Hitotoki</span>
+
+          {/* Minimalist pulsing arrow icon */}
+          <svg
+            className="w-4 h-4 text-charcoal/40 group-hover:text-matcha transition-colors duration-300 animate-bounce"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
+        </button>
+      </div>
+
       {/* 2. SEKCJA INTRO (O nas w dwóch zdaniach) */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
@@ -73,6 +104,7 @@ export default function Home({ onNavigate }: HomeProps) {
       </motion.section>
 
       <motion.section
+        id="products-section"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
