@@ -30,7 +30,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
           className="flex items-center gap-2 sm:gap-2.5 hover:opacity-80 transition-opacity cursor-pointer group"
         >
           {/* Text 'hito' hidden on mobile, visible from sm (640px) */}
-          <span className="hidden sm:inline text-xl font-light text-lino-black tracking-widest leading-none">
+          <span className="inline text-xl font-light text-lino-black tracking-widest leading-none">
             hito
           </span>
 
@@ -42,7 +42,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
           />
 
           {/* Text 'toki' hidden on mobile, visible from sm (640px) */}
-          <span className="hidden sm:inline text-xl font-light text-lino-black tracking-widest leading-none">
+          <span className="inline text-xl font-light text-lino-black tracking-widest leading-none">
             toki
           </span>
         </button>

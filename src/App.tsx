@@ -27,7 +27,7 @@ function App() {
       <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
 
       {/* Dynamic Content Switching Layer */}
-      <main>
+      <main className="px-6">
         {currentPage === "home" && <Home onNavigate={setCurrentPage} />}
         {currentPage === "about" && <About />}
         {currentPage === "dictionary" && <Dictionary />}
