@@ -38,7 +38,7 @@ export default function Store({ onNavigate }: StoreProps) {
                 className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-light/10 group-hover:bg-light/20 transition-colors duration-700 pointer-events-none" />
-              <div className="absolute top-4 left-4 bg-cream/90 backdrop-blur-sm px-2 py-1 text-xs font-serif rounded-xs z-10 text-lino-black select-none pointer-events-none">
+              <div className="absolute top-4 left-4 bg-light/90 backdrop-blur-sm px-2 py-1 text-xs font-serif rounded-xs z-10 text-lino-black select-none pointer-events-none">
                 {product.japaneseName}
               </div>
             </div>

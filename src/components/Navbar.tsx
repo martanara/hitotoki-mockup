@@ -22,7 +22,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
   };
 
   return (
-    <header className="border-b border-hojicha/10 sticky top-0 bg-cream/80 backdrop-blur-md z-50">
+    <header className="border-b border-hojicha/10 sticky top-0 bg-light/80 backdrop-blur-md z-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
         {/* LOGO - Responsive behavior */}
         <button
@@ -99,7 +99,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
 
       {/* MOBILE DROPDOWN DRAWER - Slides down elegantly when open */}
       <div
-        className={`md:hidden bg-cream border-b border-hojicha/5 transition-all duration-300 ease-in-out overflow-hidden ${
+        className={`md:hidden bg-light border-b border-hojicha/5 transition-all duration-300 ease-in-out overflow-hidden ${
           isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
         }`}
       >

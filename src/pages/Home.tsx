@@ -32,7 +32,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="pt-6">
             <button
               onClick={() => onNavigate("about")}
-              className="border border-hojicha text-hojicha px-8 py-3 text-sm tracking-widest uppercase hover:bg-hojicha hover:text-cream transition-all duration-300 rounded-sm cursor-pointer"
+              className="border border-hojicha text-hojicha px-8 py-3 text-sm tracking-widest uppercase hover:bg-hojicha hover:text-light transition-all duration-300 rounded-sm cursor-pointer"
             >
               Poznaj naszą historię
             </button>
@@ -59,13 +59,13 @@ export default function Home({ onNavigate }: HomeProps) {
               element.scrollIntoView({ behavior: "smooth", block: "start" });
             }
           }}
-          className="group flex flex-col items-center gap-2 text-[10px] tracking-[0.3em] uppercase text-hojicha/50 hover:text-matcha transition-colors duration-300 cursor-pointer focus:outline-hidden"
+          className="group flex flex-col items-center gap-2 text-[10px] tracking-[0.3em] uppercase text-hojicha/50 hover:text-hojicha transition-colors duration-300 cursor-pointer focus:outline-hidden"
         >
           <span className="font-light">Poznaj nasze herbaty</span>
 
           {/* Minimalist pulsing arrow icon */}
           <svg
-            className="w-4 h-4 text-hojicha/40 group-hover:text-matcha transition-colors duration-300 animate-bounce"
+            className="w-4 h-4 text-hojicha/40 group-hover:text-hojicha transition-colors duration-300 animate-bounce"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -137,7 +137,7 @@ export default function Home({ onNavigate }: HomeProps) {
                   className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-light/10 group-hover:bg-light/20 transition-colors duration-700 pointer-events-none" />
-                <div className="absolute top-4 left-4 bg-cream/90 backdrop-blur-sm px-2 py-1 text-xs font-serif rounded-xs z-10 text-lino-black select-none pointer-events-none">
+                <div className="absolute top-4 left-4 bg-light/90 backdrop-blur-sm px-2 py-1 text-xs font-serif rounded-xs z-10 text-lino-black select-none pointer-events-none">
                   {product.japaneseName}
                 </div>
               </div>

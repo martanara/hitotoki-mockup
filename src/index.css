@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-light: #EDEDE8;
-  --color-cream: #F7F8FD;
+  --color-light: #F7F8FD;
   --color-hojicha: #616153;
   --color-matcha: #6C9988;
   --color-gyokuro: #E2DDC0;
@@ -10,7 +9,7 @@
 }
 
 body {
-  background-color: var(--color-cream);
+  background-color: var(--color-light);
   color: var(--color-hojicha);
 }
 

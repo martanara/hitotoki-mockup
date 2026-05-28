@@ -22,7 +22,7 @@ function App() {
   }, [currentPage]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-cream text-hojicha antialiased">
+    <div className="min-h-screen flex flex-col bg-light text-hojicha antialiased">
       {/* Global Navigation Header */}
       <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
 
