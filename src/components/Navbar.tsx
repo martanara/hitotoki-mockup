@@ -55,7 +55,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               onClick={() => handleNavigation(item.id)}
               className={`text-sm tracking-widest uppercase transition-colors cursor-pointer ${
                 currentPage === item.id
-                  ? "text-matcha font-medium"
+                  ? "text-hojicha font-medium"
                   : "text-hojicha/60 hover:text-hojicha"
               }`}
             >
@@ -67,7 +67,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
         {/* MOBILE MENU BUTTON - Visible only on mobile/tablet (< 768px) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex md:hidden p-2 text-hojicha hover:text-matcha transition-colors cursor-pointer focus:outline-hidden"
+          className="flex md:hidden p-2 text-hojicha hover:text-hojicha transition-colors cursor-pointer focus:outline-hidden"
           aria-label="Toggle menu"
         >
           <svg
@@ -110,7 +110,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               onClick={() => handleNavigation(item.id)}
               className={`text-left py-2 text-sm tracking-widest uppercase transition-colors ${
                 currentPage === item.id
-                  ? "text-matcha font-medium"
+                  ? "text-hojicha font-medium"
                   : "text-hojicha/60"
               }`}
             >
