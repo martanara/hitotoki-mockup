@@ -40,7 +40,7 @@ export const PRODUCTS: Product[] = [
     description: 'Wyjątkowa hojicha z Kagoshimy, poddana procesowi mocnego prażenia...',
     tastingNotes: ['Orzech laskowy', 'Karmel', 'Ciemna czekolada'],
     brewing: { temp: '95°C', time: '30-60 sek', amount: '4g / 200ml' },
-    color: 'bg-hojicha',
+    color: 'bg-matcha',
     imageUrl: '/hojicha.jpg'
   }
 ];

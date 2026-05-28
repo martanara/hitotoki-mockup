@@ -22,7 +22,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
   };
 
   return (
-    <header className="border-b border-charcoal/10 sticky top-0 bg-cream/80 backdrop-blur-md z-50">
+    <header className="border-b border-hojicha/10 sticky top-0 bg-cream/80 backdrop-blur-md z-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
         {/* LOGO - Responsive behavior */}
         <button
@@ -56,7 +56,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               className={`text-sm tracking-widest uppercase transition-colors cursor-pointer ${
                 currentPage === item.id
                   ? "text-matcha font-medium"
-                  : "text-charcoal/60 hover:text-charcoal"
+                  : "text-hojicha/60 hover:text-hojicha"
               }`}
             >
               {item.label}
@@ -67,7 +67,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
         {/* MOBILE MENU BUTTON - Visible only on mobile/tablet (< 768px) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex md:hidden p-2 text-charcoal hover:text-matcha transition-colors cursor-pointer focus:outline-hidden"
+          className="flex md:hidden p-2 text-hojicha hover:text-matcha transition-colors cursor-pointer focus:outline-hidden"
           aria-label="Toggle menu"
         >
           <svg
@@ -99,7 +99,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
 
       {/* MOBILE DROPDOWN DRAWER - Slides down elegantly when open */}
       <div
-        className={`md:hidden bg-cream border-b border-charcoal/5 transition-all duration-300 ease-in-out overflow-hidden ${
+        className={`md:hidden bg-cream border-b border-hojicha/5 transition-all duration-300 ease-in-out overflow-hidden ${
           isOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
@@ -111,7 +111,7 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
               className={`text-left py-2 text-sm tracking-widest uppercase transition-colors ${
                 currentPage === item.id
                   ? "text-matcha font-medium"
-                  : "text-charcoal/60"
+                  : "text-hojicha/60"
               }`}
             >
               {item.label}

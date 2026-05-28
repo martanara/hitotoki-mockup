@@ -74,10 +74,10 @@ export default function Dictionary() {
       
       {/* Header section */}
       <section className="space-y-4 text-center md:text-left">
-        <h1 className="text-3xl md:text-4xl font-light tracking-wide text-charcoal">
+        <h1 className="text-3xl md:text-4xl font-light tracking-wide text-hojicha">
           Słownik Hitotoki
         </h1>
-        <p className="text-charcoal/70 font-light max-w-xl">
+        <p className="text-hojicha/70 font-light max-w-xl">
           Twój podręczny przewodnik po japońskich terminach herbacianych. Poznaj język tradycji, którą sprowadzamy do Twojego domu.
         </p>
       </section>
@@ -89,12 +89,12 @@ export default function Dictionary() {
           placeholder="Szukaj terminu (np. Matcha, Chawan)..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full bg-transparent border-b border-charcoal/20 focus:border-charcoal outline-none py-3 text-sm tracking-wide transition-colors font-light placeholder:text-charcoal/40"
+          className="w-full bg-transparent border-b border-hojicha/20 focus:border-hojicha outline-none py-3 text-sm tracking-wide transition-colors font-light placeholder:text-hojicha/40"
         />
         {searchQuery && (
           <button 
             onClick={() => setSearchQuery('')}
-            className="absolute right-0 top-3 text-xs text-charcoal/40 hover:text-charcoal transition-colors"
+            className="absolute right-0 top-3 text-xs text-hojicha/40 hover:text-hojicha transition-colors"
           >
             Clear
           </button>
@@ -107,26 +107,26 @@ export default function Dictionary() {
           filteredItems.map((item) => (
             <div 
               key={item.romaji} 
-              className="group border-b border-charcoal/5 pb-8 flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 md:gap-8"
+              className="group border-b border-hojicha/5 pb-8 flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 md:gap-8"
             >
               {/* Left Column: Language and naming tokens */}
               <div className="md:w-1/3 space-y-1">
                 <div className="flex items-baseline gap-3">
-                  <h3 className="text-xl font-medium tracking-wide text-charcoal group-hover:text-charcoal transition-colors">
+                  <h3 className="text-xl font-medium tracking-wide text-hojicha group-hover:text-hojicha transition-colors">
                     {item.romaji}
                   </h3>
-                  <span className="text-sm font-light text-charcoal/40 font-serif">
+                  <span className="text-sm font-light text-hojicha/40 font-serif">
                     {item.kanji}
                   </span>
                 </div>
-                <p className="text-xs text-charcoal tracking-wide font-medium">
+                <p className="text-xs text-hojicha tracking-wide font-medium">
                   {item.translation}
                 </p>
               </div>
 
               {/* Right Column: Descriptions */}
               <div className="md:w-2/3">
-                <p className="text-sm text-charcoal/80 font-light leading-relaxed">
+                <p className="text-sm text-hojicha/80 font-light leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -134,7 +134,7 @@ export default function Dictionary() {
           ))
         ) : (
           // Empty state placeholder
-          <div className="text-center py-12 text-charcoal/40 text-sm font-light italic">
+          <div className="text-center py-12 text-hojicha/40 text-sm font-light italic">
             Nie znaleźliśmy terminu pasującego do "{searchQuery}"
           </div>
         )}

@@ -22,12 +22,12 @@ function App() {
   }, [currentPage]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-cream text-charcoal antialiased">
+    <div className="min-h-screen flex flex-col bg-cream text-hojicha antialiased">
       {/* Global Navigation Header */}
       <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
 
       {/* Dynamic Content Switching Layer */}
-      <main className="grow max-w-5xl w-full mx-auto px-6">
+      <main>
         {currentPage === "home" && <Home onNavigate={setCurrentPage} />}
         {currentPage === "about" && <About />}
         {currentPage === "dictionary" && <Dictionary />}

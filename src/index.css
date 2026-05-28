@@ -1,16 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #F9F9F9;
-  --color-beige: #F1F0EF;
+  --color-light: #EDEDE8;
+  --color-cream: #F7F8FD;
   --color-hojicha: #616153;
-  --color-charcoal: #616153;
-  --color-white: #EDEDE8;
+  --color-matcha: #6C9988;
+  --color-gyokuro: #E2DDC0;
+  --color-sencha: #A1BF95;
 }
 
 body {
   background-color: var(--color-cream);
-  color: var(--color-charcoal);
+  color: var(--color-hojicha);
 }
 
 .vertical-text {
